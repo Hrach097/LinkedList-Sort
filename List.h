@@ -18,31 +18,35 @@ public:
 		class Node {
 		
 		public:
-				T m_value;
-				Node* m_next;
-				Node* m_prev;
+			T m_value;
+			Node* m_next;
+			Node* m_prev;
 
 		public:
-				T getValue() {
-						return this->m_value;
-				}
+			T getValue() {
+					return this->m_value;
+			}
 
-				void setValue(T value) {
-						this->m_value = value;
-				}
+			void setValue(T value) {
+					this->m_value = value;
+			}
 
-				Node* getNext(){
-						return this->m_next;			
-				}		
-				void setNext(Node* next) {
-						this->m_next = next;
-				}
-				Node* getPrev() {
-						return this->m_prev;
-				}
-				void setPrev(Node* prev) {
-						this->m_prev = prev; 
-				}
+			Node* getNext(){
+					return this->m_next;			
+			}		
+
+			void setNext(Node* next) {
+				this->m_next = next;
+			}
+		
+			Node* getPrev() {
+					return this->m_prev;
+			}
+			
+			void setPrev(Node* prev) {
+					this->m_prev = prev; 
+			}
+
 		};		
 
 		virtual Node* getHead() {
