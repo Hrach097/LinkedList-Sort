@@ -16,31 +16,33 @@ public:
 		virtual void showList();
 
 		class Node {
-				public:
-						T m_value;
-						Node* m_next;
-						Node* m_prev;
-				public:
-						T getValue() {
-								return this->m_value;
-						}
+		
+		public:
+				T m_value;
+				Node* m_next;
+				Node* m_prev;
 
-						void setValue(T value) {
-								this->m_value = value;
-						}
+		public:
+				T getValue() {
+						return this->m_value;
+				}
 
-						Node* getNext(){
-								return this->m_next;			
-						}		
-						void setNext(Node* next) {
-								this->m_next = next;
-						}
-						Node* getPrev() {
-								return this->m_prev;
-						}
-						void setPrev(Node* prev) {
-								this->m_prev = prev; 
-						}
+				void setValue(T value) {
+						this->m_value = value;
+				}
+
+				Node* getNext(){
+						return this->m_next;			
+				}		
+				void setNext(Node* next) {
+						this->m_next = next;
+				}
+				Node* getPrev() {
+						return this->m_prev;
+				}
+				void setPrev(Node* prev) {
+						this->m_prev = prev; 
+				}
 		};		
 
 		virtual Node* getHead() {
@@ -48,7 +50,7 @@ public:
 		}
 
 private:		
-			Node* m_head;
+		Node* m_head;
 		int m_size;
 
 };
